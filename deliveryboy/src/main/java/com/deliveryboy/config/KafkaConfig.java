@@ -9,12 +9,12 @@ import org.springframework.kafka.config.TopicBuilder;
 public class KafkaConfig {
 
     @Bean
-    public NewTopic topic() {
+    public NewTopic topic() { // Creating a new topic 
 
 
         return TopicBuilder
                 .name(AppConstants.LOCATION_TOPIC_NAME)
-//                .partitions()
+//                .partitions() // Defining the partitions
 //                .replicas()
                 .build();
 
